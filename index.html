@@ -1,692 +1,909 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>DevFolio - Developer Portfolio Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="utf-8">
+    <title>EVERGREEN | HTML Business Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap"
+        rel="stylesheet">
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">DevFolio</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Bootstrap CSS File -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#review" class="nav-item nav-link">Review</a>
-                        <a href="#team" class="nav-item nav-link">Team</a>
-                        <a href="#blog" class="nav-item nav-link">Blog</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+    <!-- Vendor CSS Files -->
+    <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="logo pull-left">
+                <!-- <h1><a href="index.html">SARABAR SOFTWARE</a></h1> -->
+                <a href="#">
+                    <img src="img/logo frame.png" alt="Logo" title="Logo" style="width:170px; height:auto;">
+                </a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="price.html">Price</a></li>
+                    <!-- <li class="menu-has-children"><a href="#">Dropdown <i class="dicon ion-md-arrow-dropdown"></i></a>
+                        <ul>
+                            <li><a href="">Dropdown Item</a></li>
+                            <li><a href="">Dropdown Item</a></li>
+                            <li><a href="">Dropdown Item</a></li>
+                            <li><a href="">Dropdown Item</a></li>
+                            <li><a href="">Dropdown Item</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Slider Section Start-->
+    <section class="slider">
+        <div class="slider-container">
+            <div id="carousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+                <ol class="carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-background"><img src="img/slider-1.jpg" alt=""></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2>Web Development</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum
+                                    ligula. Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit
+                                    placerat.
+                                </p>
+                                <a href="https://htmlcodex.com" class="btn-get-started">Get Started</a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-background"><img src="img/slider-2.jpg" alt=""></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2>App Development</h2>
+                                <p>
+                                    Maecenas vel turpis quis lorem aliquam tempus quis non mi. Pellentesque habitant
+                                    morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                </p>
+                                <a href="https://htmlcodex.com" class="btn-get-started">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-background"><img src="img/slider-3.jpg" alt=""></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2>Game Development</h2>
+                                <p>
+                                    Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex
+                                    diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus
+                                </p>
+                                <a href="https://htmlcodex.com" class="btn-get-started">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon ion-md-arrow-back" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon ion-md-arrow-forward" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
             </div>
         </div>
-        <!-- Nav Bar End -->
+    </section>
+    <!-- Slider Section End-->
 
+    <!-- About Us Section Start-->
+    <section class="about">
+        <div class="container">
+            <header class="section-header">
+                <h3>About Us</h3>
+                <p>
+                    Maecenas vel turpis quis lorem aliquam tempus quis non mi. Pellentesque habitant morbi tristique
+                    senectus et netus et malesuada fames ac turpis egestas.
+                </p>
+            </header>
 
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Kate Winslet</h1>
-                                <h2></h2>
-                                <div class="typed-text">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="#contact">Hire Me</a>
-                                <a class="btn" href="#contact">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
-                        </div>
-                    </div>
+            <div class="row align-items-center about-row">
+                <div class="col-md-6">
+                    <img src="img/about.jpg" alt="" class="img-fluid">
                 </div>
-            </div>
-        </div>
-        <!-- Hero End -->
-
-
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>10 Years Experience</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
-                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>Web Design</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Web Development</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Apps Design</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Apps Development</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <a class="btn" href="">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-        
-        
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What I do</p>
-                    <h2>Awesome Quality Services</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Job Experience End -->
-        
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Reasonable Price</p>
-                    <h2>Get A <span>Special</span> Price</h2>
-                </div>
-                <div class="container banner-text">
+                <div class="col-md-6">
+                    <h2 class="title"><a href="#">Welcome to Our Site</a></h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum ligula. Integer
+                        ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat, pretium lorem id,
+                        porttitor libero. Suspendisse scelerisque nec arcu a malesuada. Nulla tempus dictum tristique.
                     </p>
-                    <a href="#" class="btn">Pricing Plan</a>
+                    <div class="read-more">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row about-cols">
+                <div class="col-md-4">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-disc"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Mission</a></h2>
+                        <p>
+                            Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec
+                            lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien
+                            sagittis
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-eye"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Vision</a></h2>
+                        <p>
+                            Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec
+                            lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien
+                            sagittis
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="img/about-objective.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-options"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Objective</a></h2>
+                        <p>
+                            Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec
+                            lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien
+                            sagittis
+                        </p>
+                        <div class="read-more">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Banner End -->
+    </section>
+    <!-- About Us Section End -->
 
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
+    <!-- Services Section Start -->
+    <section id="services" class="services">
+        <div class="container">
+            <header class="section-header">
+                <h3>Services</h3>
+                <p>
+                    Integer sollicitudin sed nulla non consequat. Nullam vitae erat quis leo accumsan ullamcorper.
+                    Suspendisse leo purus, pellentesque posuere.
+                </p>
+            </header>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-desktop"></i>
+                        <h4><a href="">Web Design</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
                 </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-laptop"></i>
+                        <h4><a href="">Web Development</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-tablet-portrait"></i>
+                        <h4><a href="">App Design</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-phone-portrait"></i>
+                        <h4><a href="">App Development</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-desktop"></i>
+                        <h4><a href="">Web Design</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-laptop"></i>
+                        <h4><a href="">Web Development</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-tablet-portrait"></i>
+                        <h4><a href="">App Design</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <i class="ion-ios-phone-portrait"></i>
+                        <h4><a href="">App Development</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Call To Action Start -->
+    <section class="call-to-action">
+        <div class="container text-center">
+            <header class="section-header">
+                <h3>Call to Action</h3>
+                <p>
+                    Integer sollicitudin sed nulla non consequat. Nullam vitae erat quis leo accumsan ullamcorper.
+                    Suspendisse leo purus, pellentesque posuere.
+                </p>
+            </header>
+            <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+    </section>
+    <!-- Call To Action End -->
+
+    <!--Pricing Section start-->
+    <section class="pricing">
+        <div class="container">
+            <header class="section-header">
+                <h3>Our Pricing</h3>
+                <p>
+                    Nulla in est tincidunt, volutpat mi quis, gravida tortor. Suspendisse potenti. Nullam ornare, dui a
+                    vulputate mollis, est lorem ultrices neque.
+                </p>
+            </header>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="price-content">
+                        <div class="price-plan">
+                            <p class="price-title">Silver</p>
+                            <h2 class="price-amount">9.<span>99</span></h2>
+                            <p class="price-date">Per Month</p>
+                        </div>
+                        <ul class="price-details">
+                            <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
+                            <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
+                            <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
+                            <li><i class="ion-md-close"></i><strong>IonIcons</strong> integrated</li>
+                            <li><i class="ion-md-close"></i>Free <strong>Google Font</strong> integrated</li>
+                            <li><i class="ion-md-close"></i><strong>Responsive</strong> design</li>
+                        </ul>
+                        <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-content features-price">
+                        <div class="price-plan">
+                            <p class="price-title">Gold</p>
+                            <h2 class="price-amount">19.<span>99</span></h2>
+                            <p class="price-date">Per Month</p>
+                        </div>
+                        <ul class="price-details">
+                            <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
+                            <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
+                            <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
+                            <li><i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated</li>
+                            <li><i class="ion-md-checkmark"></i>Free <strong>Google Font</strong> integrated</li>
+                            <li><i class="ion-md-close"></i><strong>Responsive</strong> design</li>
+                        </ul>
+                        <a href="#" class="btn mian-btn price-btn features-price-btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-content">
+                        <div class="price-plan">
+                            <p class="price-title">Platinum</p>
+                            <h2 class="price-amount">29.<span>99</span></h2>
+                            <p class="price-date">Per Month</p>
+                        </div>
+                        <ul class="price-details">
+                            <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
+                            <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
+                            <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
+                            <li><i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated</li>
+                            <li><i class="ion-md-checkmark"></i>Free <strong>Google Font</strong> integrated</li>
+                            <li><i class="ion-md-checkmark"></i><strong>Responsive</strong> design</li>
+                        </ul>
+                        <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Pricing Section End-->
+
+    <!-- Skills Section Start-->
+    <section class="skills">
+        <div class="container">
+            <header class="section-header">
+                <h3>Our Skills</h3>
+                <p>
+                    Quisque ac tincidunt ipsum egestas viverra mi, ac vehicula enim consectetur quis. In imperdiet
+                    varius elit, ut convallis lectus luctus quis.
+                </p>
+            </header>
+
+            <div class="skills-content">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="100">
+                        <span class="skill">HTML <i class="val">100%</i></span>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100">
+                        <span class="skill">CSS <i class="val">90%</i></span>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                        aria-valuemax="100">
+                        <span class="skill">jQuery <i class="val">80%</i></span>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                        aria-valuemax="100">
+                        <span class="skill">PHP <i class="val">70%</i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row counters">
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counter-up">100</h2>
+                    <p>Our Staffs</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counter-up">200</h2>
+                    <p>Our Clients</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counter-up">300</h2>
+                    <p>Completed Projects</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counter-up">400</h2>
+                    <p>Running Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End-->
+
+    <!-- Portfolio Section Start -->
+    <section class="portfolio">
+        <div class="container">
+
+            <header class="section-header">
+                <h3 class="section-title">Our Portfolio</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec
+                    hendrerit. Ut eu libero nec magna placerat fringilla.
+                </p>
+            </header>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".web-des">Web Design</li>
+                        <li data-filter=".web-dev">Web Development</li>
+                        <li data-filter=".app-des">App Design</li>
+                        <li data-filter=".app-dev">App Development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-1.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Lorem ipsum dolor"
+                                class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Lorem ipsum dolor</h4>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-2.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio"
+                                data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Nulla ullamcorper pharetra</h4>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item app-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-3.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio"
+                                data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Phasellus eget dictum</h4>
+                            <p>App Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item app-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-4.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio" data-title="Lorem ipsum dolor"
+                                class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Donec mattis vestibulum</h4>
+                            <p>App Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-5.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio"
+                                data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Pellentesque ullamcorper</h4>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-6.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio"
+                                data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Sed pretium sapien</h4>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Team Section Start -->
+    <section class="team">
+        <div class="container">
+            <header class="section-header">
+                <h3 class="section-title">Meet our team</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec
+                    hendrerit. Ut eu libero nec magna placerat fringilla.
+                </p>
+            </header>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-block">
+                        <a href="#"><img alt="" class="team-img" src="img/team-1.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">John P. Haight</span> <span class="card-text">Web
+                                    Designer</span>
+                                <div class="social-nav">
+                                    <a href="#"><i class="ion-logo-twitter"></i></a>
+                                    <a href="#"><i class="ion-logo-facebook"></i></a>
+                                    <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                    <a href="#"><i class="ion-logo-instagram"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-block">
+                        <a href="#"><img alt="" class="team-img" src="img/team-2.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">David R. Bernard</span> <span class="card-text">Web
+                                    Developer</span>
+                                <div class="social-nav">
+                                    <a href="#"><i class="ion-logo-twitter"></i></a>
+                                    <a href="#"><i class="ion-logo-facebook"></i></a>
+                                    <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                    <a href="#"><i class="ion-logo-instagram"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-block">
+                        <a href="#"><img alt="" class="team-img" src="img/team-3.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">Dana A. Thomas</span> <span class="card-text">App
+                                    Designer</span>
+                                <div class="social-nav">
+                                    <a href="#"><i class="ion-logo-twitter"></i></a>
+                                    <a href="#"><i class="ion-logo-facebook"></i></a>
+                                    <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                    <a href="#"><i class="ion-logo-instagram"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-block">
+                        <a href="#"><img alt="" class="team-img" src="img/team-4.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">Ava M. Proctor</span> <span class="card-text">App
+                                    Developer</span>
+                                <div class="social-nav">
+                                    <a href="#"><i class="ion-logo-twitter"></i></a>
+                                    <a href="#"><i class="ion-logo-facebook"></i></a>
+                                    <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                    <a href="#"><i class="ion-logo-instagram"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Testimonials Section Start -->
+    <section class="testimonials">
+        <div class="container">
+            <header class="section-header">
+                <h3 class="section-title">Testimonials</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec
+                    hendrerit. Ut eu libero nec magna placerat fringilla.
+                </p>
+            </header>
+
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Testimonial image">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="testimonial-text">
+                            <h3>Anna M. Brzezinski</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Nullam vulputate nunc diam, non congue est vestibulum ut. Curabitur placerat mauris non
+                                nisi cursus commodo. Integer dolor augue, maximus interdum pretium a, mattis ut mi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Testimonial image">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="testimonial-text">
+                            <h3>Shirley H. Lee</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Nullam vulputate nunc diam, non congue est vestibulum ut. Curabitur placerat mauris non
+                                nisi cursus commodo. Integer dolor augue, maximus interdum pretium a, mattis ut mi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Testimonial image">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="testimonial-text">
+                            <h3>Kerry E. Thomas</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Nullam vulputate nunc diam, non congue est vestibulum ut. Curabitur placerat mauris non
+                                nisi cursus commodo. Integer dolor augue, maximus interdum pretium a, mattis ut mi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Clients Section Start -->
+    <section class="clients">
+        <div class="container">
+            <header class="section-header">
+                <h3 class="section-title">Our Clients</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec
+                    hendrerit. Ut eu libero nec magna placerat fringilla.
+                </p>
+            </header>
+
+            <div class="owl-carousel clients-carousel">
+                <img src="img/client-1.jpg" alt="Client Logo">
+                <img src="img/client-2.jpg" alt="Client Logo">
+                <img src="img/client-3.jpg" alt="Client Logo">
+                <img src="img/client-4.jpg" alt="Client Logo">
+                <img src="img/client-5.jpg" alt="Client Logo">
+                <img src="img/client-6.jpg" alt="Client Logo">
+                <img src="img/client-7.jpg" alt="Client Logo">
+                <img src="img/client-8.jpg" alt="Client Logo">
+            </div>
+
+        </div>
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Contact Us</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec
+                    hendrerit. Ut eu libero nec magna placerat fringilla.
+                </p>
+            </div>
+
+            <div class="row contact-info">
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-md-pin"></i>
+                        <h3>Address</h3>
+                        <address>1300 Center Avenue, CA, USA</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-md-call"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+123-456-789">+123-456-789</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-md-mail"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453304!3d36.24128894212527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1574923227698!5m2!1sen!2sbd"
+                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form">
+                        <form class="contactForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Web Design</li>
-                            <li data-filter=".filter-2">Mobile Apps</li>
-                            <li data-filter=".filter-3">Game Dev</li>
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>EVERGREEN</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tortor commodo,
+                            sollicitudin velit nec, lobortis erat. Sed rutrum metus ac augue scelerisque, vel commodo
+                            erat commodo. Mauris quis mattis sem. Maecenas dictum nunc.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Home</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">About us</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Our services</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Terms & condition</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>eCommerce Website</h3>
-                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                            </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            1300 Center Avenue<br>
+                            Fresno, California<br>
+                            United States <br>
+                            <strong>Phone:</strong> +123-456-7890<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#"><i class="ion-logo-twitter"></i></a>
+                            <a href="#"><i class="ion-logo-facebook"></i></a>
+                            <a href="#"><i class="ion-logo-linkedin"></i></a>
+                            <a href="#"><i class="ion-logo-instagram"></i></a>
+                            <a href="#"><i class="ion-logo-googleplus"></i></a>
                         </div>
+
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Product Landing Page</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Subscription</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type.</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript quiz game</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript drawing</h3>
-                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Social Mobile Apps</h3>
-                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Company Website</h3>
-                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
-        <!-- Portfolio End -->
-        
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Awesome Discount</p>
-                    <h2>Get <span>30%</span> Discount</h2>
-                </div>
-                <div class="container banner-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
-                    </p>
-                    <a class="btn">Order Now</a>
-                </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <a href="https://htmlcodex.com">HTML Codex</a>. All Rights Reserved<br>
+                Template By <a href="https://htmlcodex.com">HTML Codex</a>
             </div>
         </div>
-        <!-- Banner End -->
-        
-        
-        <!-- Testimonial Start -->
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
+    </footer>
+    <!-- Footer End -->
 
+    <a href="#" class="back-to-top"><i class="ion-md-arrow-dropup"></i></a>
 
-        <!-- Team Start -->
-        <div class="team" id="team">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Team</p>
-                    <h2>Expert Team Members</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Mollie Ross</h2>
-                                <h4>Web Designer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Dylan Adams</h2>
-                                <h4>Web Developer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Jennifer Page</h2>
-                                <h4>Apps Designer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Josh Dunn</h2>
-                                <h4>Apps Developer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-        
-        
-        <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <h4 class="text-white mb-4">Receive messages instantly with our PHP and Ajax contact form - available in the <a href="https://htmlcodex.com/downloading/?item=1011" style="color: #111111; text-decoration: underline;">Pro Version</a> only.</h4>
-                                <form>
-                                    <div class="control-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Your Name" />
-                                    </div>
-                                    <div class="control-group mb-3">
-                                        <input type="email" class="form-control" placeholder="Your Email" />
-                                    </div>
-                                    <div class="control-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" placeholder="Message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
+    <!-- Vendor JS Files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/easing/easing.min.js"></script>
+    <script src="vendor/superfish/hoverIntent.js"></script>
+    <script src="vendor/superfish/superfish.min.js"></script>
+    <script src="vendor/waypoints/waypoints.min.js"></script>
+    <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="vendor/counterup/counterup.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/lightbox/js/lightbox.min.js"></script>
 
+    <!-- Main Javascript File -->
+    <script src="js/main.js"></script>
 
-        <!-- Blog Start -->
-        <div class="blog" id="blog">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Articles</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Web Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>5</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
+</body>
 
-
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Kate Winslet</h2>
-                        <h3>123 Street, New York, USA</h3>
-                        <div class="footer-menu">
-                            <p>+012 345 67890</p>
-                            <p>info@example.com</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | 
-					
-					<!--/*** The author’s attribution link must remain intact in the template. ***/-->
-                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
 </html>
