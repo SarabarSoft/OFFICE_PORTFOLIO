@@ -1562,39 +1562,3 @@ body.mobile-nav-active #mobile-nav-toggle {
         padding: 0;
     }
 }
-
-.service-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 30px 20px;
-  transition: all 0.4s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transform-style: preserve-3d;
-  cursor: pointer;
-  perspective: 1000px;
-  
-}
-
-.service-card i {
-  color: #224294;
-  transition: color 0.3s ease;
-}
-
-.service-card h4 a {
-  transition: color 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-10px) rotateX(8deg) rotateY(8deg);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #224294, #DC1D25);
-}
-
-.service-card:hover i,
-.service-card:hover h4 a,
-.service-card:hover p {
-  color: #fff !important;
-}
-
-/* Custom CSS */
-/* Service Card Height */
