@@ -80,9 +80,9 @@ h6 {
 }
 
 .header.header-scrolled {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px 0;
-    height: 72px;
+    background: #fff;
+    padding: 18px 0;
+    height: 92px;
     transition: all 0.3s;
 }
 
@@ -102,14 +102,17 @@ h6 {
 }
 
 .header .logo img {
-    max-height: 70px; /* Increase logo size */
-  width: auto;
-  transition: all 0.3s ease;
+    max-height: 70px;
+    /* Increase logo size */
+    width: auto;
+    transition: all 0.3s ease;
 }
+
 @media (max-width: 768px) {
-  .header .logo img {
-    max-height: 55px; /* slightly smaller on mobile */
-  }
+    .header .logo img {
+        max-height: 55px;
+        /* slightly smaller on mobile */
+    }
 }
 
 
@@ -373,7 +376,8 @@ h6 {
     bottom: 0;
     z-index: 999;
 
-    background: rgba(10, 53, 105, 0.95); /* Deep navy blue */
+    background: rgba(10, 53, 105, 0.95);
+    /* Deep navy blue */
     /* optional gradient for a richer effect */
     background: linear-gradient(180deg, #0a3569 0%, #05264d 100%);
 
@@ -408,7 +412,7 @@ h6 {
 }
 
 #mobile-nav ul li a:hover {
-     background: linear-gradient(90deg, #02a5e6, #0a3569);
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
 }
 
 #mobile-nav ul li li {
@@ -430,7 +434,7 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.ion-md-arrow-dropup {
-     color: #0a3569;
+    color: #0a3569;
 }
 
 #mobile-nav ul .menu-has-children i.dicon {
@@ -467,10 +471,11 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
     color: #ffffff;
 }
+
 @media (max-width: 768px) {
-  #mobile-nav-toggle {
-    display: inline;
-  }
+    #mobile-nav-toggle {
+        display: inline;
+    }
 }
 
 
@@ -607,13 +612,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about .about-col:hover .icon {
-    background: #ffffff; /* flips to white on hover */
-    transform: scale(1.1); /* slight zoom for effect */
+    background: #ffffff;
+    /* flips to white on hover */
+    transform: scale(1.1);
+    /* slight zoom for effect */
     box-shadow: 0 0 10px rgba(2, 165, 230, 0.5);
 }
 
 .about .about-col:hover i {
-     color: #0a3569;
+    color: #0a3569;
 }
 
 .about .about-col h2 {
@@ -626,18 +633,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about .about-col h2 a {
-  background: linear-gradient(90deg, #02a5e6, #0a3569);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease;
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .about .about-col h2 a:hover {
-  background: linear-gradient(90deg, #0a3569, #02a5e6); /* reverse for hover */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #0a3569, #02a5e6);
+    /* reverse for hover */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about .about-col p {
@@ -681,18 +689,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ------------------ Title Gradient Style ------------------ */
 .title a {
-  background: linear-gradient(90deg, #02a5e6, #0a3569);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease;
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .title a:hover {
-  background: linear-gradient(90deg, #0a3569, #02a5e6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #0a3569, #02a5e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -700,7 +708,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ---------------- Services Style ----------------- */
 .services {
     background: #ffffff;
-    padding: 60px 0 60px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -709,32 +717,160 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0;
 }
 
+/* Card Style */
 .single-service {
     position: relative;
     text-align: center;
-    color: #353535;
+    color: #0a3569;
     font-weight: 400;
     margin: 30px 0 0;
-    transition: all 0.3s;
+    padding: 25px 15px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
 }
 
+/* Icon - gradient blue by default */
 .single-service i {
     font-size: 64px;
-    color: #1dbf73;
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
+      margin-bottom: 4px;
+      
 }
 
+/* Title */
 .single-service h4,
 .single-service h4 a {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     text-transform: capitalize;
-    color: #353535;
+    color: #0a3569;
+    transition: all 0.4s ease;
+  margin-top: 4px;
+    margin-bottom: 2px;
 }
 
+/* Paragraph */
 .single-service p {
     margin: 0;
+    color: #0a3569;
+    transition: all 0.4s ease;
+    .single-service p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.3;
 }
+
+}
+
+/* Hover: gradient background + white text + white icon */
+.single-service:hover {
+    background: linear-gradient(135deg, #02a5e6, #0a3569);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.single-service:hover i {
+    -webkit-text-fill-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.single-service:hover h4,
+.single-service:hover h4 a,
+.single-service:hover p {
+    color: #ffffff !important;
+}
+
+/* --- Fix card alignment and equal height across all cards --- */
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* centers all the cards */
+}
+
+.services .col-12,
+.services .col-sm-6,
+.services .col-md-4,
+.services .col-lg-3 {
+    display: flex;
+    align-items: stretch;
+    /* makes all cards equal height */
+}
+
+.single-service {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Ensure proper spacing between rows of cards */
+.services .col-12,
+.services .col-sm-6,
+.services .col-md-4,
+.services .col-lg-3 {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px; /* 👈 adds vertical gap between rows */
+}
+
+
+/* ---------- Mobile Responsive Fixes ---------- */
+@media (max-width: 576px) {
+    .services {
+        padding: 40px 0;
+        /* slightly less padding on small screens */
+    }
+
+    .single-service {
+        margin: 10px 0;
+        padding: 20px 10px;
+    }
+
+    .single-service i {
+        font-size: 48px;
+        /* smaller icons on mobile */
+    }
+
+    .single-service h4 {
+
+        margin-bottom: 6px;
+    }
+
+    .single-service p {
+        margin-top: 0;
+    }
+
+    /* Ensure single column alignment */
+    .services .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .col-12,
+    .services .col-sm-6,
+    .services .col-md-4,
+    .services .col-lg-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .single-service {
+        width: 90%;
+        /* slight padding from screen edges */
+        max-width: 350px;
+    }
+}
+
+
 
 
 /* ------------ Call To Action Section ------------- */
@@ -961,6 +1097,22 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 18px;
     color: #353535;
 }
+.skills-content .progress {
+    height: 25px;
+    background: #e9ecef;
+    border-radius: 50px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.skills-content .progress-bar {
+    text-align: left;
+    padding-left: 15px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 25px;
+    border-radius: 50px;
+}
 
 
 /* ----------------- Portfolio Style --------------- */
@@ -994,7 +1146,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #1dbf73;
+    background:  #0a3569;
     color: #ffffff;
 }
 
@@ -1067,9 +1219,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio .portfolio-item figure .link-preview {
-    left: calc(50% - 65px);
-    top: calc(50% - 18px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 36px;
+    background: #0a3569;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s;
 }
+
 
 .portfolio .portfolio-item figure .link-details {
     right: calc(50% - 65px);
@@ -1251,7 +1412,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .testimonials .owl-dot.active {
-    background-color: #1dbf73;
+    background-color: #0a3569;
 }
 
 @media (max-width: 575px) {
@@ -1259,6 +1420,9 @@ body.mobile-nav-active #mobile-nav-toggle {
         padding: 25px;
     }
 }
+
+
+
 
 
 /* ------------------ Clients Style ---------------- */
@@ -1297,26 +1461,37 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .clients .owl-dot.active {
-    background-color: #1dbf73;
+    background-color:#0a3569;
 }
 
 
 /* ----------------- Contact Style ----------------- */
+/* ----------------- Contact Style ----------------- */
 .contact {
-    position: relative;
     padding: 60px 0;
     background: #f2f2f2;
+
+    /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact .container {
     max-width: 900px;
+    width: 100%;
 }
 
+/* Center individual contact-info items */
 .contact .contact-info {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    gap: 20px; /* space between items */
     margin-bottom: 30px;
-    text-align: center;
+    flex-wrap: wrap; /* wrap on smaller screens */
 }
 
+/* Individual cards styling */
 .contact .contact-address,
 .contact .contact-phone,
 .contact .contact-email {
@@ -1324,7 +1499,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 15px 30px 25px 30px;
     text-align: center;
     color: #353535;
+    flex: 0 0 250px; /* fixed width for each card */
 }
+
 
 .contact .contact-address:hover,
 .contact .contact-phone:hover,
@@ -1335,7 +1512,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact .contact-info i {
     font-size: 48px;
     display: inline-block;
-    color: #1dbf73;
+    color: #0a3569;
 }
 
 .contact .contact-info address,
@@ -1357,7 +1534,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact .contact-info a:hover {
-    color: #1dbf73;
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* for non-webkit browsers */
 }
 
 .contact .map {
@@ -1420,7 +1600,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer .footer-top {
-    background: #1dbf73;
+    background: #0a3569;
     padding: 60px 0 30px 0;
 }
 
@@ -1448,7 +1628,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 18px;
     display: inline-block;
     background: #ffffff;
-    color: #1dbf73;
+    color: #0a3569;
     line-height: 1;
     padding: 9px 0;
     margin-right: 4px;
@@ -1549,6 +1729,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer .copyright {
     text-align: center;
     padding-top: 30px;
+    font-size: 14px;
+    color: #ffffff; /* fallback for older browsers */
+}
+
+/* Gradient text just for Sarabar Software */
+.footer .copyright a {
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 
