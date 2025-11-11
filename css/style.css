@@ -1624,10 +1624,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 15px 0;
 }
 
-.clients img:hover {
+/* .clients img:hover {
     opacity: .5;
+} */
+.clients img:hover {
+    opacity: 1;          /* fully visible on hover */
+    transform: scale(1.05); /* optional: slightly zoom */
 }
-
 .clients .owl-nav,
 .clients .owl-dots {
     margin-top: 5px;
