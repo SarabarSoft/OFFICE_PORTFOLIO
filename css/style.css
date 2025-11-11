@@ -48,7 +48,7 @@ h6 {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #0a3569;
+    background:  linear-gradient(90deg, #02a5e6, #0a3569);
     color: #ffffff;
     width: 45px;
     height: 45px;
@@ -136,21 +136,45 @@ h6 {
   overflow: hidden;
 }
 
-.carousel-item {
+/* .carousel-item {
   display: flex !important;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100%; */
   /* ✅ Real visible height */
-  min-height: calc((var(--vh, 1vh) * 100) - 92px);
+  /* min-height: calc((var(--vh, 1vh) * 100) - 92px);
   transition: opacity 0.6s ease-in-out;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
+} */
+
+.carousel-item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* prevent overlap */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-in-out;
+  min-height: calc((var(--vh, 1vh) * 100) - 92px);
 }
+
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+
+
 
 .carousel-item.active {
   opacity: 1;
@@ -184,12 +208,20 @@ h6 {
 }
 
 /* ✅ Balanced image: not cut, not leaving white space */
-.slider-image img {
+/* .slider-image img {
   width: 100%;
   height: calc((var(--vh, 1vh) * 100) - 92px);
   object-fit: contain; /* full image visible */
+  /* object-position: center;
+} */ 
+
+.slider-image img {
+  width: 100%;
+  max-height: calc((var(--vh, 1vh) * 100) - 92px);
+  object-fit: contain;
   object-position: center;
 }
+
 
 /* ---------------- Arrows ---------------- */
 .carousel-control-prev,
@@ -397,23 +429,26 @@ h6 {
 }
 
 .nav-menu a {
-    display: inline-block;
-    padding: 0 8px 10px 8px;
-    color: #0a3569;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-    text-decoration: none;
+  display: inline-block;
+  padding: 0 8px 10px 8px;
+  color: #0a3569;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* smooth hover effect */
 }
 
-.nav-menu li:hover>a,
-.nav-menu>.menu-active>a {
-    background: linear-gradient(90deg, #02a5e6, #0a3569);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  background: linear-gradient(90deg, #02a5e6, #0a3569);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
+
 
 .nav-menu>li {
     margin-left: 10px;
@@ -1353,13 +1388,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /* --- For ecommerce category --- */
-.portfolio .portfolio-item.ecommerce figure:hover .link-preview {
+/* .portfolio .portfolio-item.ecommerce figure:hover .link-preview {
   left: calc(50% - 40px);
   opacity: 1;
 }
 .portfolio .portfolio-item.ecommerce figure:hover .link-details {
   left: calc(50% + 40px);
   opacity: 1;
+} */
+
+
+
+/* --- Website & E-Commerce: show only the eye icon centered --- */
+.portfolio .portfolio-item.website figure .link-details,
+.portfolio .portfolio-item.ecommerce figure .link-details {
+  display: none !important;
+}
+
+.portfolio .portfolio-item.website figure:hover .link-preview,
+.portfolio .portfolio-item.ecommerce figure:hover .link-preview {
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 /* --- For other categories (App, UI/UX, etc.) show only the eye --- */
@@ -1402,7 +1452,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Hide the "1 of 16" image count in lightbox */
 .lb-data .lb-number {
     display: none !important;
+    
 }
+
+
 
 
 
@@ -1768,11 +1821,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-items: center;
   justify-content: center;
   background: #ffffff;
- color: #0a3569;
+  color: #0a3569;
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin-right: 6px;
+  margin-top: 20px;
+  margin: 8px; /* even space all around */
   transition: all 0.3s ease;
 }
 
@@ -1793,20 +1847,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Footer Contact Section */
 .footer .footer-top .footer-contact p {
     color: #ffffff;
-    line-height: 26px;
+    line-height: 20px;
     margin: 0;
 }
 
 .footer .footer-top .footer-contact strong {
-    display: inline-block;
-    width: 90px;
+  display: inline-block;
+  width: 65px; /* reduced from 100px for tighter alignment */
 }
 
 .footer .footer-top .footer-contact a {
     color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 3px; /* ✅ small vertical gap */
 }
+
 
 .footer .footer-top .footer-contact a:hover {
     background: linear-gradient(90deg, #02a5e6, #0a3569);
@@ -1885,8 +1942,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .footer .footer-top .footer-contact p {
-    color: #ffffff;
-    line-height: 26px;
+   color: #ffffff;
+    line-height: 20px; /* reduced line spacing */
+    margin-bottom: 8px; /* small bottom space for balance */
 }
 
 .footer .footer-top .footer-newsletter input[type="email"] {
