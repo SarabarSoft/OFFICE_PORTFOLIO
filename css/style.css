@@ -1817,6 +1817,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #ffffff;
 }
 
+
 /* Default state */
 .footer .footer-top .footer-contact .social-links a {
   font-size: 18px;
@@ -1881,19 +1882,22 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #ffffff;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    padding-bottom: 8px; /* was 12px, tighter for balance */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: inline-block; /* ensures underline width matches text */
 }
 
 .footer .footer-top h4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100px;
-    border-bottom: 3px dashed #ffffff;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* anchors underline exactly under text */
+  height: 0;
+  width: 100%; /* matches heading width automatically */
+  border-bottom: 3px dashed #ffffff;
+  transform: scaleY(0.8); /* optical alignment fix for Retina/high DPI screens */
+  transform-origin: bottom;
 }
 
 .footer .footer-top .footer-links ul {
@@ -1919,10 +1923,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ---------------- Footer Link Hover Gradient Effect ---------------- */
 .footer .footer-top .footer-links ul a {
-  color: #ffffff;
-  position: relative;
-  display: inline-block;
-  transition: all 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;  /* Removes default underline */
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;  /* Adjust padding for neat appearance */
+    transition: all 0.3s ease;
 }
 
 /* Gradient text hover */
@@ -1930,7 +1936,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: linear-gradient(90deg, #02a5e6, #0a3569);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: none;
+  color: #02a5e6;
 }
 
 /* Optional: make arrow icons change color too */
@@ -1985,12 +1991,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Gradient text just for Sarabar Software */
 .footer .copyright a {
-    background: linear-gradient(90deg, #02a5e6, #0a3569);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #02a5e6;  /* Light Blue color for the link */
     font-weight: 600;
     text-decoration: none;
 }
+
 /* --- Fix: Social Icons Hover Gradient & White Icon --- */
 .footer .footer-top .footer-contact .social-links a:hover {
   background: linear-gradient(90deg, #02a5e6, #0a3569);
@@ -2009,6 +2014,36 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: color 0.3s ease;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .footer .footer-top .footer-links ul {
+        display: flex;
+        flex-direction: column;  /* Stack links vertically */
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer .footer-top .footer-links ul li {
+        border-bottom: 2px solid #ffffff; /* Ensure underline for mobile */
+        padding: 10px 0;  /* Adjust padding for better spacing */
+    }
+
+    /* Optionally increase the font size for better readability */
+    .footer .footer-top .footer-links ul a {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    /* Ensure the links don't overlap with other content */
+    .footer .footer-top .footer-info,
+    .footer .footer-top .footer-contact {
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+
+    .footer .footer-top h3,
+    .footer .footer-top h4 {
+        font-size: 18px; /* Adjust heading size */
+    }
+}
 
 /* ---------------- Responsive Design -------------- */
 @media (min-width: 1024px) {
