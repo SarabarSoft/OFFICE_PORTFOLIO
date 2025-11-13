@@ -173,179 +173,183 @@
     </section> -->
     <!-- Slider Section End-->
 
-<!-- Include Bootstrap CSS -->
-<link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-/>
 
-<!-- Slider Section -->
-<section id="hero-slider" class="slider">
-  <div id="mainCarousel" class="carousel slide" data-ride="carousel">
 
-    <!-- Indicators (4 dots) -->
-    <!-- <ol class="carousel-indicators">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Slider Section -->
+    <section id="hero-slider" class="slider">
+        <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+            <!-- Indicators (4 dots visible on all screens) -->
+            <!-- <ol class="carousel-indicators">
       <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#mainCarousel" data-slide-to="1"></li>
       <li data-target="#mainCarousel" data-slide-to="2"></li>
       <li data-target="#mainCarousel" data-slide-to="3"></li>
     </ol> -->
 
-    <!-- Slides -->
-    <div class="carousel-inner">
+            <!-- Slides -->
+            <div class="carousel-inner">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="container-fluid px-0">
-          <div class="row no-gutters align-items-center">
-            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
-              <h2 class="text-primary font-weight-bold mb-3">Web Development</h2>
-              <p class="lead mb-4">
-                We craft modern, responsive, high-performing websites that deliver seamless user experiences and reflect your brand identity.
-              </p>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+                                <h2 class="font-weight-bold mb-3" style="color: #1592E2;">Website Development</h2>
+                                <p class="lead mb-4">
+                                    We craft modern, responsive, high-performing websites that deliver seamless user
+                                    experiences and reflect your brand identity.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="img/slider1.jpg" alt="Web Development" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+                                <h2 class="font-weight-bold mb-3" style="color: #1592E2;">Mobile Applications</h2>
+                                <p class="lead mb-4">
+                                    We build innovative, user-friendly, high-performance mobile apps that deliver
+                                    seamless experiences across Android and iOS.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="img/slider2.jpg" alt="Mobile App Development" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+                                <h2 class="font-weight-bold mb-3" style="color: #1592E2;">UI/UX Design</h2>
+                                <p class="lead mb-4">
+                                    We design user-friendly, visually appealing, and functional digital experiences that
+                                    keep users engaged and make your brand stand out.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="img/slider3.jpg" alt="UI/UX Design" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+                                <h2 class="font-weight-bold mb-3" style="color: #1592E2;">
+                                    E-Commerce
+                                </h2>
+                                <p class="lead mb-4">
+                                    We build powerful and easy-to-manage e-commerce websites that help you sell more
+                                    online with secure, fast, and user-friendly shopping experiences.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="img/slider4.jpg" alt="E-Commerce Development" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-6 text-center">
-              <img src="img/slider1.jpg" alt="Web Development" class="img-fluid">
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="container-fluid px-0">
-          <div class="row no-gutters align-items-center">
-            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
-              <h2 class="text-primary font-weight-bold mb-3">Mobile App Development</h2>
-              <p class="lead mb-4">
-                We build innovative, user-friendly, high-performance mobile apps that deliver seamless experiences across Android and iOS.
-              </p>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="img/slider2.jpg" alt="Mobile App Development" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Custom CSS -->
+    <style>
+        .slider {
+            background-color: #f8f9fa;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 70px;
+        }
 
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="container-fluid px-0">
-          <div class="row no-gutters align-items-center">
-            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
-              <h2 class="text-primary font-weight-bold mb-3">UI/UX Design</h2>
-              <p class="lead mb-4">
-                We design user-friendly, visually appealing, and functional digital experiences that keep users engaged and make your brand stand out.
-              </p>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="img/slider3.jpg" alt="UI/UX Design" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
+        .slider h2 {
+            font-size: 2.2rem;
+        }
 
-      <!-- Slide 4 -->
-      <div class="carousel-item">
-        <div class="container-fluid px-0">
-          <div class="row no-gutters align-items-center">
-            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
-              <h2 class="text-primary font-weight-bold mb-3">E-Commerce Development</h2>
-              <p class="lead mb-4">
-                We build powerful and easy-to-manage e-commerce websites that help you sell more online with secure, fast, and user-friendly shopping experiences.
-              </p>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="img/slider4.jpg" alt="E-Commerce Development" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
+        .slider p {
+            font-size: 1.1rem;
+            color: #555;
+        }
 
-    </div>
+        .slider img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
 
-  </div>
-</section>
+        /* Dots styling */
+        .carousel-indicators {
+            bottom: -15px;
+            justify-content: center;
+        }
 
-<!-- Custom CSS -->
-<style>
-  .slider {
-    background-color: #f8f9fa;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 70px; /* 🟢 increased bottom space for dots */
-  }
+        .carousel-indicators li {
+            width: 12px;
+            height: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 6px;
+            transition: all 0.3s ease;
+        }
 
-  .slider h2 {
-    font-size: 2.2rem;
-  }
+        .carousel-indicators .active {
+            background-color: #007bff;
+            transform: scale(1.2);
+        }
 
-  .slider p {
-    font-size: 1.1rem;
-    color: #555;
-  }
+        @media (max-width: 991.98px) {
+            .slider img {
+                height: 300px;
+            }
+        }
 
-  .slider img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
+        @media (max-width: 767.98px) {
+            .slider h2 {
+                font-size: 1.5rem;
+            }
 
-  /* Dots styling */
-  .carousel-indicators {
-    bottom: 25px; /* slightly above bottom padding */
-    justify-content: center; /* center horizontally */
-  }
+            .slider p {
+                font-size: 1rem;
+            }
 
-  .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    margin: 0 6px;
-    transition: all 0.3s ease;
-  }
+            .slider img {
+                height: 250px;
+            }
 
-  .carousel-indicators .active {
-    background-color: #007bff;
-    transform: scale(1.2); /* makes active dot pop slightly */
-  }
+            .carousel-indicators li {
+                width: 10px;
+                height: 10px;
+            }
 
-  @media (max-width: 991.98px) {
-    .slider img {
-      height: 300px;
-    }
-  }
+            .slider {
+                padding-bottom: 60px;
+            }
+        }
+    </style>
 
-  @media (max-width: 767.98px) {
-    .slider h2 {
-      font-size: 1.5rem;
-    }
-
-    .slider p {
-      font-size: 1rem;
-    }
-
-    .slider img {
-      height: 250px;
-    }
-
-    .carousel-indicators li {
-      width: 10px;
-      height: 10px;
-    }
-
-    .slider {
-      padding-bottom: 60px; /* smaller but still spaced for mobile */
-    }
-  }
-</style>
-
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -372,7 +376,7 @@
                     <p>
                         Welcome to <strong>Sarabar Software</strong> — your trusted partner for smart, creative, and
                         user-friendly digital solutions.
-                        We specialize in <strong>Web Development</strong>, <strong>App Development</strong>,
+                        We specialize in <strong>Web Development</strong>, <strong>Mobile App Development</strong>,
                         <strong>E-Commerce</strong>, and
                         <strong>UI/UX Design</strong>. Our dedicated team combines innovation, technology, and
                         experience to deliver
@@ -387,71 +391,59 @@
                 </div>
             </div>
 
-            <div class="row about-cols">
-                <!-- <div class="col-md-4"> -->
-                <div class="col-12 col-md-4">
+           <div class="row about-cols d-flex align-items-stretch">
+  <div class="col-12 col-md-4 d-flex">
+    <div class="about-col flex-fill">
+      <div class="img">
+        <img src="img/image 1.png" alt="" class="img-fluid">
+        <div class="icon"><i class="ion-ios-disc"></i></div>
+      </div>
+      <h2 class="title"><a href="#">Our Mission</a></h2>
+      <p>
+        At <strong>Sarabar Software</strong>, our mission is to empower businesses with smart,
+        reliable, and innovative digital solutions.
+        We aim to deliver high-quality web, app, and e-commerce products that enhance user
+        experience, strengthen brand identity,
+        and help our clients achieve success through technology.
+      </p>
+    </div>
+  </div>
 
-                    <div class="about-col">
-                        <div class="img">
-                            <img src="img/image 1.png" alt="" class="img-fluid">
-                            <div class="icon"><i class="ion-ios-disc"></i></div>
-                        </div>
-                        <h2 class="title"><a href="#">Our Mission</a></h2>
-                        <p>
-                            At <strong>Sarabar Software</strong>, our mission is to empower businesses with smart,
-                            reliable, and innovative digital solutions.
-                            We aim to deliver high-quality web, app, and e-commerce products that enhance user
-                            experience, strengthen brand identity,
-                            and help our clients achieve success through technology.
-                        </p>
-                        <!-- <div class="read-more">
-                            <a href="#">Read More</a>
-                        </div> -->
-                    </div>
-                </div>
+  <div class="col-12 col-md-4 d-flex">
+    <div class="about-col flex-fill">
+      <div class="img">
+        <img src="img/image 2.png" alt="" class="img-fluid">
+        <div class="icon"><i class="ion-ios-eye"></i></div>
+      </div>
+      <h2 class="title"><a href="#">Our Vision</a></h2>
+      <p>
+        Our vision at <strong>Sarabar Software</strong> is to be a leading force in digital
+        innovation — creating solutions that inspire growth,
+        simplify technology, and empower businesses worldwide. We strive to build a future where
+        every idea is transformed into a powerful,
+        user-centric digital experience that makes a lasting impact.
+      </p>
+    </div>
+  </div>
 
-                <div class="col-md-4">
-                    <div class="about-col">
-                        <div class="img">
-                            <img src="img/image 2.png" alt="" class="img-fluid">
-                            <div class="icon"><i class="ion-ios-eye"></i></div>
-                        </div>
-                        <h2 class="title"><a href="#">Our Vision</a></h2>
-                        <p>
-                            Our vision at <strong>Sarabar Software</strong> is to be a leading force in digital
-                            innovation — creating solutions that inspire growth,
-                            simplify technology, and empower businesses worldwide. We strive to build a future where
-                            every idea is transformed into a powerful,
-                            user-centric digital experience that makes a lasting impact.
-                        </p>
+  <div class="col-12 col-md-4 d-flex">
+    <div class="about-col flex-fill">
+      <div class="img">
+        <img src="img/image 3.png" alt="" class="img-fluid">
+        <div class="icon"><i class="ion-ios-options"></i></div>
+      </div>
+      <h2 class="title"><a href="#">Our Objective</a></h2>
+      <p>
+        At <strong>Sarabar Software</strong>, our objective is to deliver cutting-edge digital
+        solutions that combine creativity,
+        technology, and strategy. We focus on understanding client needs, providing seamless user
+        experiences, and ensuring every
+        project is completed on time with the highest standards of quality and satisfaction.
+      </p>
+    </div>
+  </div>
+</div>
 
-                        <!-- <div class="read-more">
-                            <a href="#">Read More</a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="about-col">
-                        <div class="img">
-                            <img src="img/image 3.png" alt="" class="img-fluid">
-                            <div class="icon"><i class="ion-ios-options"></i></div>
-                        </div>
-                        <h2 class="title"><a href="#">Our Objective</a></h2>
-                        <p>
-                            At <strong>Sarabar Software</strong>, our objective is to deliver cutting-edge digital
-                            solutions that combine creativity,
-                            technology, and strategy. We focus on understanding client needs, providing seamless user
-                            experiences, and ensuring every
-                            project is completed on time with the highest standards of quality and satisfaction.
-                        </p>
-
-                        <!-- <div class="read-more">
-                            <a href="#">Read More</a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- About Us Section End -->
