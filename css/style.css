@@ -976,6 +976,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     left: calc(50% - 32px);
     bottom: -30px;
     transition: all 0.3s ease;
+    
 }
 
 .about .about-col i {
@@ -1060,6 +1061,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about .about-row .read-more a {
     margin: 0;
 }
+
+/* Equal height for About cards on tablet & foldable devices only */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about .about-cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .about .about-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 480px; /* Adjust height if needed */
+  }
+}
+
+
 
 /* ------------------ Title Gradient Style ------------------ */
 .title a {
@@ -1704,6 +1725,67 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+.lb-prev, .lb-next {
+    display: block !important;
+    opacity: 1 !important;
+    width: 50px !important;       /* arrow width */
+    height: 50px !important;      /* arrow height */
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -25px !important; /* half of height to center vertically */
+    z-index: 9999 !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Positioning left and right arrows */
+.lb-prev {
+    left: 10px !important;
+}
+
+.lb-next {
+    right: 10px !important;
+}
+
+/* Hover effect */
+.lb-prev:hover, .lb-next:hover {
+    opacity: 0.8 !important;
+}
+
+/* Optional: adjust arrow size for very small screens */
+@media (max-width: 480px) {
+    .lb-prev, .lb-next {
+        width: 40px !important;
+        height: 40px !important;
+        margin-top: -20px !important; /* half of new height */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .lb-prev, .lb-next {
+        display: block !important;
+        opacity: 1 !important;
+        width: 50px !important;       /* or whatever size you need */
+        height: 50px !important;
+        top: 50% !important;
+        margin-top: -25px !important;  /* half of height to center vertically */
+        z-index: 9999 !important;
+    }
+
+    .lb-prev {
+        left: 10px !important;
+    }
+
+    .lb-next {
+        right: 10px !important;
+    }
+
+    .lb-prev:hover, .lb-next:hover {
+        opacity: 0.8 !important;
+    }
+}
 
 
 
