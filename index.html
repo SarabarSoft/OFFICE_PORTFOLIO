@@ -38,7 +38,7 @@
 
     <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  
+
 
 </head>
 
@@ -173,82 +173,177 @@
     </section> -->
     <!-- Slider Section End-->
 
+<!-- Include Bootstrap CSS -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
 
+<!-- Slider Section -->
+<section id="hero-slider" class="slider">
+  <div id="mainCarousel" class="carousel slide" data-ride="carousel">
 
+    <!-- Indicators (4 dots) -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#mainCarousel" data-slide-to="1"></li>
+      <li data-target="#mainCarousel" data-slide-to="2"></li>
+      <li data-target="#mainCarousel" data-slide-to="3"></li>
+    </ol> -->
 
-    <section class="slider">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <!-- Slides -->
+    <div class="carousel-inner">
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="slider-text">
-                        <h2>Web Development</h2>
-                        <p>
-                            We craft modern, responsive, and high-performing websites that elevate your online presence.
-                            Our expert team ensures seamless user experience and visually engaging designs aligned with
-                            your goals.
-                        </p>
-                    </div>
-                    <div class="slider-image">
-                        <img src="img/slider1.jpg" alt="Web Development" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="slider-text">
-                        <h2>App Development</h2>
-                        <p>
-                            We build innovative, high-performance mobile apps tailored to your business — ensuring
-                            smooth functionality and great design.
-                        </p>
-                    </div>
-                    <div class="slider-image">
-                        <img src="img/slider2.jpg" alt="App Development" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="slider-text">
-                        <h2>UI/UX Design</h2>
-                        <p>
-                            We create intuitive, user-focused interfaces that make every interaction smooth and
-                            engaging.
-                            Our UI/UX team blends aesthetics with functionality to deliver seamless digital experiences
-                            across all platforms.
-                        </p>
-                    </div>
-                    <div class="slider-image">
-                        <img src="img/slider3.jpg" alt="UI/UX Design" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="slider-text">
-                        <h2>E-Commerce</h2>
-                        <p>
-                            We build powerful and easy-to-manage e-commerce websites that help you sell more online.
-                            Our team focuses on creating secure, fast, and user-friendly shopping experiences with
-                            smooth navigation, clear product displays, and safe payment options.
-                        </p>
-                    </div>
-                    <div class="slider-image">
-                        <img src="img/slider4.jpg" alt="E-Commerce" class="img-fluid">
-                    </div>
-                </div>
-                </div>
-
-                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="container-fluid px-0">
+          <div class="row no-gutters align-items-center">
+            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+              <h2 class="text-primary font-weight-bold mb-3">Web Development</h2>
+              <p class="lead mb-4">
+                We craft modern, responsive, high-performing websites that deliver seamless user experiences and reflect your brand identity.
+              </p>
             </div>
-    </section>
+            <div class="col-md-6 text-center">
+              <img src="img/slider1.jpg" alt="Web Development" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="container-fluid px-0">
+          <div class="row no-gutters align-items-center">
+            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+              <h2 class="text-primary font-weight-bold mb-3">Mobile App Development</h2>
+              <p class="lead mb-4">
+                We build innovative, user-friendly, high-performance mobile apps that deliver seamless experiences across Android and iOS.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="img/slider2.jpg" alt="Mobile App Development" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="container-fluid px-0">
+          <div class="row no-gutters align-items-center">
+            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+              <h2 class="text-primary font-weight-bold mb-3">UI/UX Design</h2>
+              <p class="lead mb-4">
+                We design user-friendly, visually appealing, and functional digital experiences that keep users engaged and make your brand stand out.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="img/slider3.jpg" alt="UI/UX Design" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="container-fluid px-0">
+          <div class="row no-gutters align-items-center">
+            <div class="col-md-6 text-center text-md-left p-4 p-md-5">
+              <h2 class="text-primary font-weight-bold mb-3">E-Commerce Development</h2>
+              <p class="lead mb-4">
+                We build powerful and easy-to-manage e-commerce websites that help you sell more online with secure, fast, and user-friendly shopping experiences.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="img/slider4.jpg" alt="E-Commerce Development" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+  .slider {
+    background-color: #f8f9fa;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 70px; /* 🟢 increased bottom space for dots */
+  }
+
+  .slider h2 {
+    font-size: 2.2rem;
+  }
+
+  .slider p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /* Dots styling */
+  .carousel-indicators {
+    bottom: 25px; /* slightly above bottom padding */
+    justify-content: center; /* center horizontally */
+  }
+
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+  }
+
+  .carousel-indicators .active {
+    background-color: #007bff;
+    transform: scale(1.2); /* makes active dot pop slightly */
+  }
+
+  @media (max-width: 991.98px) {
+    .slider img {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .slider h2 {
+      font-size: 1.5rem;
+    }
+
+    .slider p {
+      font-size: 1rem;
+    }
+
+    .slider img {
+      height: 250px;
+    }
+
+    .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+    }
+
+    .slider {
+      padding-bottom: 60px; /* smaller but still spaced for mobile */
+    }
+  }
+</style>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -294,7 +389,7 @@
 
             <div class="row about-cols">
                 <!-- <div class="col-md-4"> -->
-                    <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4">
 
                     <div class="about-col">
                         <div class="img">
