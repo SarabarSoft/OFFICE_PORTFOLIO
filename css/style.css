@@ -137,6 +137,14 @@ h6 {
     overflow: hidden;
 }
 
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #02a5e6, #0a3569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* .carousel-item {
   display: flex !important;
   align-items: center;
