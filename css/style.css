@@ -2318,6 +2318,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact .contact-phone:hover i,
 .contact .contact-phone:hover h3,
 .contact .contact-phone:hover a,
+.contact .contact-address:hover i,
+.contact .contact-address:hover h3,
+.contact .contact-address:hover a,
 .contact .contact-email:hover i,
 .contact .contact-email:hover h3,
 .contact .contact-email:hover a {
