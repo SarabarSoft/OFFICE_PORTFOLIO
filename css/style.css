@@ -2193,19 +2193,29 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-bottom: 10px;
 }
 
-.clients img {
+/* .clients img {
     max-width: 120px;
-    /* reduce logo size width */
+  
     height: auto;
-    /* keep aspect ratio */
+  
     opacity: 1;
     transition: 0.3s;
     padding: 15px 0;
-    margin: 0 auto;
-    /* center logos */
+    margin: 0 auto; 
     display: block;
-    /* ensures centering works */
+  
+} */
+
+.clients img {
+    max-width: 160px;   /* increase logo size */
+    height: auto;       /* keep aspect ratio */
+    opacity: 1;
+    transition: 0.3s;
+    padding: 20px 0;    /* slightly more spacing */
+    margin: 0 auto;
+    display: block;
 }
+
 
 
 /* .clients img:hover {
